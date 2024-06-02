@@ -1,0 +1,21 @@
+<div class="form-container">
+    <p class="text-center font42">Interested in working together?</p>
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"
+                formControlName="Email">
+
+        </div>
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" name="FullName" placeholder="Full Name" formControlName="FullName">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea class="form-control" formControlName="Comment" rows="5" name="Comment">
+</textarea>
+        </div>
+        <tb-button [maxWidth]="88" type="submit" [disabled]="!FormData.valid">Submit</tb-button>
+    </form>
+</div>

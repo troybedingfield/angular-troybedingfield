@@ -1,3 +1,4 @@
-<button class="{{ color }} {{ fill }} {{ size }} {{typecase === true ? 'text-uppercase' : ''}}" [disabled]="disabled">
+<button class="{{ color }} {{ fill }} {{ size }} {{typecase === true ? 'text-uppercase' : ''}}" [disabled]="disabled"
+    [style.maxWidth]="maxWidth + 'px'">
     <ng-content></ng-content>
 </button>

@@ -8,6 +8,9 @@ import { AppRoutingModule } from "./app.routes";
 import { HomeComponent } from "./home/home.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ButtonComponent } from "./shared/components/button/button.component";
+import { ReactiveFormsModule } from "@angular/forms";
+import { ContactFormComponent } from "./shared/components/contact-form/contact-form.component";
+import { ContactService } from "./shared/services/contact.service";
 
 @NgModule({
     declarations: [
@@ -15,14 +18,18 @@ import { ButtonComponent } from "./shared/components/button/button.component";
         HeaderComponent,
         HomeComponent,
         FooterComponent,
-        ButtonComponent
+        ButtonComponent,
+        ContactFormComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        RouterModule
+        RouterModule,
+        ReactiveFormsModule
     ],
-    providers: [],
+    providers: [
+        ContactService
+    ],
     bootstrap: [AppComponent]
 })
 
