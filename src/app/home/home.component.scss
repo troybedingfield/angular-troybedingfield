@@ -1,0 +1,129 @@
+.home-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 12px;
+    background: rgba($color: #0693e3, $alpha: 1);
+    // background: rgb(0, 35, 106);
+    background: linear-gradient(0deg, rgba(0, 18, 54, 1) 4%, rgba(18, 121, 168, 1) 42%, rgba(0, 212, 255, 1) 80%, rgba(207, 247, 255, 1) 100%);
+    justify-content: center;
+}
+
+
+
+.home-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12px 24px 12px;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+.saas-work {
+    background-color: rgba($color: white, $alpha: 0.98);
+    padding: 12px 0;
+
+
+    .inner-container {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.marketing-work {
+    max-width: 1280px;
+    margin-top: 24px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 60px;
+
+    & * {
+        color: white;
+    }
+
+    // a {
+    //     color: rgba(0, 212, 255, 1);
+    // }
+}
+
+.home-two-column {
+    display: flex;
+    width: 100%;
+    padding: 0 12px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .column1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .column2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        padding: 0;
+
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .home-two-column {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .column1 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .column2 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            padding: 0;
+
+            li {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
