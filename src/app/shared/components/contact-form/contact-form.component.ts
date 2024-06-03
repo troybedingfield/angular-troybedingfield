@@ -43,7 +43,8 @@ export class ContactFormComponent {
     // console.log({ error })
     // })
     // TODO: Use EventEmitter with form value
-    console.warn(this.FormData.value);
+    // console.warn(JSON.stringify(this.FormData.value));
+    this.contact.PostMessage(this.FormData.value);
     this.FormData.reset();
   }
 

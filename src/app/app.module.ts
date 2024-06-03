@@ -11,6 +11,7 @@ import { ButtonComponent } from "./shared/components/button/button.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { ContactFormComponent } from "./shared/components/contact-form/contact-form.component";
 import { ContactService } from "./shared/services/contact.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { ContactService } from "./shared/services/contact.service";
         BrowserModule,
         AppRoutingModule,
         RouterModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
     providers: [
         ContactService
