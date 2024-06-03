@@ -44,6 +44,7 @@ export class ContactFormComponent {
     // })
     // TODO: Use EventEmitter with form value
     console.warn(this.FormData.value);
+    this.FormData.reset();
   }
 
 }
