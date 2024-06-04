@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map } from 'rxjs';
 
 @Injectable({
@@ -16,9 +16,17 @@ export class ContactService {
   PostMessage(input: any) {
     // const inputCleanup = JSON.stringify(input);
     // console.log(inputCleanup);
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Origin': '*',
+      'Access-Control-Request-Headers': '*',
+      'Access-Control-Request-Method': 'post'
+    })
+    let options = { headers: headers };
     return this.http.post(
       this.api,
-      input)
+      input,
+      options)
       .pipe(
         map((response: any) => {
           return response;
