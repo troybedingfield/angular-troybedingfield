@@ -15,7 +15,7 @@ export class ContactService {
 
   PostMessage(input: any) {
     const inputCleanup = JSON.stringify(input);
-    console.log(inputCleanup);
+    // console.log(inputCleanup);
     // let headers = new HttpHeaders({
     //   'Content-Type': 'application/json',
     //   'Access-Control-Request-Headers': '*',
