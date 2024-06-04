@@ -14,11 +14,11 @@ export class ContactService {
   ) { }
 
   PostMessage(input: any) {
-    const inputCleanup = JSON.stringify(input);
-    console.log(inputCleanup);
+    // const inputCleanup = JSON.stringify(input);
+    // console.log(inputCleanup);
     return this.http.post(
       this.api,
-      inputCleanup)
+      input)
       .pipe(
         map((response: any) => {
           return response;
