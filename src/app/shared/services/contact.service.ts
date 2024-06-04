@@ -16,17 +16,18 @@ export class ContactService {
   PostMessage(input: any) {
     const inputCleanup = JSON.stringify(input);
     console.log(inputCleanup);
-    let headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Access-Control-Request-Headers': '*',
-      'Access-Control-Request-Method': 'post',
-      'Access-Control-Allow-Origin': '*'
-    })
-    let options = { headers: headers };
+    // let headers = new HttpHeaders({
+    //   'Content-Type': 'application/json',
+    //   'Access-Control-Request-Headers': '*',
+    //   'Access-Control-Request-Method': 'post',
+    //   'Access-Control-Allow-Origin': '*'
+    // })
+    // let options = { headers: headers };
     return this.http.post(
       this.api,
       inputCleanup,
-      options)
+      // options
+    )
       .pipe(
         map((response: any) => {
           return response;
