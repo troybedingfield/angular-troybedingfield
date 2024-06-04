@@ -14,8 +14,8 @@ export class ContactService {
   ) { }
 
   PostMessage(input: any) {
-    // const inputCleanup = JSON.stringify(input);
-    // console.log(inputCleanup);
+    const inputCleanup = JSON.stringify(input);
+    console.log(inputCleanup);
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Access-Control-Request-Headers': '*',
@@ -25,7 +25,7 @@ export class ContactService {
     let options = { headers: headers };
     return this.http.post(
       this.api,
-      input,
+      inputCleanup,
       options)
       .pipe(
         map((response: any) => {
