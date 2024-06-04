@@ -18,7 +18,6 @@ export class ContactService {
     // console.log(inputCleanup);
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Origin': '*',
       'Access-Control-Request-Headers': '*',
       'Access-Control-Request-Method': 'post',
       'Access-Control-Allow-Origin': '*'
