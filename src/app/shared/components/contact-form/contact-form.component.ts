@@ -33,7 +33,7 @@ export class ContactFormComponent {
 
 
   onSubmit() {
-    // console.log(FormData)
+    // console.log(this.FormData);
     // this.contact.PostMessage(FormData)
     // .subscribe(response => {
     // location.href = 'https://mailthis.to/confirm'
