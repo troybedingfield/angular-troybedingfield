@@ -15,18 +15,23 @@ export class ContactService {
 
   PostMessage(input: any) {
     const inputCleanup = JSON.stringify(input);
-    return this.http.post(this.api, inputCleanup, { responseType: 'text' }).pipe(
-      map((response: any) => {
-        console.log(response);
-        return response;
-      }
-      ),
-      catchError((err) => {
-        console.log(err);
-        return err;
-      }
+    console.log(inputCleanup);
+    return this.http.post(
+      this.api,
+      inputCleanup)
+      .pipe(
+        map((response: any) => {
+          return response;
+        }
+        ),
+        catchError((err) => {
+          return err;
+        }
+        )
       )
-    )
-    // console.log(inputCleanup);
+      .subscribe(response => {
+        console.log(response);
+      })
+
   }
 }
