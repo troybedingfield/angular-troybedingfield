@@ -12,6 +12,8 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { ContactFormComponent } from "./shared/components/contact-form/contact-form.component";
 import { ContactService } from "./shared/services/contact.service";
 import { HttpClientModule } from "@angular/common/http";
+import { RecaptchaModule } from "ng-recaptcha";
+import { RecaptchaFormsModule } from "ng-recaptcha";
 
 @NgModule({
     declarations: [
@@ -27,7 +29,9 @@ import { HttpClientModule } from "@angular/common/http";
         AppRoutingModule,
         RouterModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+        RecaptchaModule,
+        RecaptchaFormsModule
     ],
     providers: [
         ContactService

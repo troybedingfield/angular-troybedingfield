@@ -16,6 +16,10 @@
             <textarea class="form-control" formControlName="Comment" rows="5" name="Comment">
 </textarea>
         </div>
-        <tb-button [maxWidth]="88" type="submit" [disabled]="!FormData.valid">Submit</tb-button>
+        <div [hidden]="captcha">
+            <re-captcha (resolved)="resolved($event)" siteKey="6LcvSfApAAAAAKHZLwncTat926y89UVN3ySnK2aO">
+            </re-captcha>
+        </div>
+        <tb-button [hidden]="!captcha" [maxWidth]="88" type="submit" [disabled]="!FormData.valid">Submit</tb-button>
     </form>
 </div>

@@ -9,6 +9,8 @@ import { ContactService } from '../../services/contact.service';
 })
 export class ContactFormComponent {
 
+  captcha: string | undefined;
+
   FormData = new FormGroup({
     FullName: new FormControl('', [Validators.required]),
     Email: new FormControl('', [
@@ -46,6 +48,13 @@ export class ContactFormComponent {
     // console.warn(JSON.stringify(this.FormData.value));
     this.contact.PostMessage(this.FormData.value);
     this.FormData.reset();
+
+    // reload on submission
+    // window.location.reload();
+  }
+
+  resolved(captchaResponse: string | any) {
+    this.captcha = captchaResponse;
   }
 
 }
