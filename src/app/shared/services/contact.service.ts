@@ -20,7 +20,8 @@ export class ContactService {
       'Content-Type': 'application/json',
       'Origin': '*',
       'Access-Control-Request-Headers': '*',
-      'Access-Control-Request-Method': 'post'
+      'Access-Control-Request-Method': 'post',
+      'Access-Control-Allow-Origin': '*'
     })
     let options = { headers: headers };
     return this.http.post(
