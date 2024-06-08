@@ -26,7 +26,7 @@ export class ContactService {
     return this.http.post(
       this.api,
       inputCleanup,
-      // options
+      { observe: 'response' }
     )
       .pipe(
         map((response: any) => {
