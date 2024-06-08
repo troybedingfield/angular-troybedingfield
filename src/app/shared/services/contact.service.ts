@@ -35,7 +35,7 @@ export class ContactService {
         )
       )
       .subscribe(response => {
-        console.log(response);
+        console.log(response.status);
       })
 
   }
