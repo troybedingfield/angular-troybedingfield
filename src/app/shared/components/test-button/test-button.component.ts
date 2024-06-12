@@ -37,13 +37,13 @@ export class TestButtonComponent implements OnInit {
     this.codeString = '<library-button';
 
     if (this.color != 'default') {
-      this.codeString += ` color="${this.color}"`;
+      this.codeString += ` color="'${this.color}'"`;
     }
     if (this.fill != 'solid') {
-      this.codeString += ` [fill]=" ${this.fill} "`;
+      this.codeString += ` [fill]="'${this.fill}'"`;
     }
     if (this.size != 'medium') {
-      this.codeString += ` [size]="${this.size}"`;
+      this.codeString += ` [size]="'${this.size}'"`;
     }
 
     if (this.uppercase) {
