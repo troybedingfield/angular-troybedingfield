@@ -1,4 +1,4 @@
-<button class="{{ color }} {{ fill }} {{ size }} {{typecase === true ? 'text-uppercase' : ''}}" [disabled]="disabled"
-    [style.maxWidth]="maxWidth + 'px'">
+<button class="{{ color }} {{ fill }} {{ size }} {{uppercase === true ? 'text-uppercase' : ''}}" [disabled]="disabled"
+    [style.maxWidth]="maxWidth + 'px'" [style.minWidth]="minWidth + 'px'">
     <ng-content></ng-content>
 </button>

@@ -1,0 +1,82 @@
+<div class="test-container">
+
+    <div class="test-button-two-column">
+
+        <div class="column1">
+            <div class="form-container">
+                <!-- <div class="form-group">
+                    <label>Value</label>
+                    <input type="text" class="form-control" [(ngModel)]="value">
+                </div> -->
+                <div class="form-group">
+                    <label for="label">Label</label>
+                    <input type="text" class="form-control" [(ngModel)]="label" (change)="onChange()">
+                </div>
+                <div class="form-group">
+                    <label>Color</label>
+                    <select [(ngModel)]="color" class="form-control" (change)="onChange()">
+                        <option value="default">Default</option>
+                        <option value="success">Success</option>
+                        <option value="warning">Warning</option>
+                        <option value="error">Error</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Fill</label>
+                    <select [(ngModel)]="fill" class="form-control" (change)="onChange()">
+                        <option value="solid">Solid</option>
+                        <option value="outline">Outline</option>
+                        <option value="clear">Clear</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Size</label>
+                    <select [(ngModel)]="size" class="form-control" (change)="onChange()">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="toggle-switch">
+                        <label class="switch">
+                            <input [(ngModel)]="uppercase" type="checkbox" (change)="onChange()">
+                            <span class="slider round"></span>
+                        </label>
+                        Uppercase
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="toggle-switch">
+                        <label class="switch">
+                            <input [(ngModel)]="disabled" type="checkbox" (change)="onChange()">
+                            <span class="slider round"></span>
+                        </label>
+                        Disabled
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column2">
+            <div class="code-block">
+                <div>
+                    <label>Test Button</label>
+                    <tb-button [color]="color" [fill]="fill" [size]="size" [uppercase]="uppercase"
+                        [disabled]="disabled">{{label}}</tb-button>
+                </div>
+                <div class="code-container">
+                    <label class="margin-top25">Code</label>
+                    <app-test-code-block [codeString]="codeString"></app-test-code-block>
+                </div>
+                <!-- <div class="output-event">
+                    <label class="margin-top25">Output Event Log</label>
+                    <div [innerHTML]="consoleText" class="output-box"></div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+</div>

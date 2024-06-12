@@ -11,6 +11,7 @@ export class ButtonComponent {
   @Input() disabled = false;
   @Input() fill: 'solid' | 'outline' | 'clear' | undefined;
   @Input() size: 'small' | 'medium' | 'large' | undefined;
-  @Input() typecase: true | false | undefined;
+  @Input() uppercase: true | false = false;
   @Input() maxWidth: number | undefined;
+  @Input() minWidth: number | undefined;
 }

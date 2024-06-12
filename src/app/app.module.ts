@@ -8,12 +8,14 @@ import { AppRoutingModule } from "./app.routes";
 import { HomeComponent } from "./home/home.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ButtonComponent } from "./shared/components/button/button.component";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ContactFormComponent } from "./shared/components/contact-form/contact-form.component";
 import { ContactService } from "./shared/services/contact.service";
 import { HttpClientModule } from "@angular/common/http";
 import { RecaptchaModule } from "ng-recaptcha";
 import { RecaptchaFormsModule } from "ng-recaptcha";
+import { TestButtonComponent } from "./shared/components/test-button/test-button.component";
+import { SharedModule } from "./shared/modules/shared.module";
 
 @NgModule({
     declarations: [
@@ -21,7 +23,6 @@ import { RecaptchaFormsModule } from "ng-recaptcha";
         HeaderComponent,
         HomeComponent,
         FooterComponent,
-        ButtonComponent,
         ContactFormComponent
     ],
     imports: [
@@ -31,12 +32,15 @@ import { RecaptchaFormsModule } from "ng-recaptcha";
         ReactiveFormsModule,
         HttpClientModule,
         RecaptchaModule,
-        RecaptchaFormsModule
+        RecaptchaFormsModule,
+        TestButtonComponent,
+        FormsModule,
+        SharedModule
     ],
     providers: [
         ContactService
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 
 export class AppModule { }
