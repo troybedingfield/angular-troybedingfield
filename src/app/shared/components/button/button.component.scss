@@ -13,6 +13,10 @@ button {
     justify-content: center;
     cursor: pointer;
 
+    &.secondary {
+        background-color: var(--color-button-secondary);
+    }
+
     &.outline {
         background-color: var(--color-button-outline);
         border: 1px solid var(--color-button-default);

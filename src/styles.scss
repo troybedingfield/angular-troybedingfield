@@ -6,6 +6,7 @@
     --color-text-disabled: lightgray;
     --color-background-disabled: rgba(128, 128, 128, 0.2);
     --color-button-default: rgba(0, 124, 186, 0.95);
+    --color-button-secondary: #001C29;
     --color-text-button: white;
     --color-button-outline: white;
     --color-transparent: transparent;
@@ -157,4 +158,12 @@ a>i.icon {
 
 a {
     text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
 }

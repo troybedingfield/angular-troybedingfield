@@ -8,4 +8,13 @@ import { TestButtonComponent } from '../shared/components/test-button/test-butto
 })
 export class HomeComponent {
 
+  showFigma: boolean = false;
+
+  showText: string = 'Show'
+  hideText: string = 'Hide'
+
+  showSection() {
+    document.getElementById('figma-container')?.classList.toggle('hide');
+  }
+
 }

@@ -36,6 +36,25 @@
         <app-test-button></app-test-button>
     </div>
 
+    <div class="figma-work">
+        <div class="inner-container">
+            <div class="text-center">
+                <p>Click to see Figma work</p>
+                <div class="button-container">
+                    <tb-button [customBGColor]="'#1abcfe'" (click)="showFigma=!showFigma"><ng-container>{{showFigma ===
+                            true ?
+                            hideText :
+                            showText}}</ng-container> Figma</tb-button>
+                </div>
+            </div>
+            <div id="figma-container" *ngIf="showFigma">
+                <iframe class=" responsive-iframe"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FrOj7ptt7KWZOZdNt2cen4n%2FDesign-System%3Ft%3DkPEUfPGxHZjAR30J-1"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 
     <div class="marketing-work">
         <p class="text-center">Marketing site's I've managed and/or built:</p>
