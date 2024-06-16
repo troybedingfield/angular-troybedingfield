@@ -66,6 +66,11 @@ app-home {
     display: flex;
 }
 
+a {
+    color: var(--color-button-default);
+    cursor: pointer;
+}
+
 
 .content-container {
     display: flex;
