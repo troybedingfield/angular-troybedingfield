@@ -28,7 +28,7 @@ export class ToastService {
     // This will update the toastState to the toastState passed into the function
     this.toastState$.next(toastState);
 
-    // This updates the toastMessage to the toastMsg passed into the function    ﻿
+    // This updates the toastMessage to the toastMsg passed into the function
     this.toastMessage$.next(toastMsg);
 
     // This will update the showToast trigger to 'true'
