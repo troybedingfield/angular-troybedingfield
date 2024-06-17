@@ -1,0 +1,9 @@
+<div [class]="toast.toastState$ | async" [@toastTrigger]="(toast.showToast$ | async) ? 'open' : 'close'">
+    <div class="toast-interior">
+        {{ toast.toastMessage$ | async }}
+    </div>
+
+    <a class="toast-close" (click)="dismiss()">
+
+    </a>
+</div>

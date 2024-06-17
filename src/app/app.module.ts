@@ -16,6 +16,7 @@ import { RecaptchaModule } from "ng-recaptcha";
 import { RecaptchaFormsModule } from "ng-recaptcha";
 import { TestButtonComponent } from "./shared/components/test-button/test-button.component";
 import { SharedModule } from "./shared/modules/shared.module";
+import { ToastComponent } from "./shared/components/toast/toast.component";
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import { SharedModule } from "./shared/modules/shared.module";
         RecaptchaFormsModule,
         TestButtonComponent,
         FormsModule,
-        SharedModule
+        SharedModule,
+        ToastComponent
     ],
     providers: [
         ContactService
