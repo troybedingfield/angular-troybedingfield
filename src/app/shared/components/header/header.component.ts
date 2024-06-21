@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   viewResume() {
-    window.open('./assets/troy-bedingfield.pdf');
+    window.open('./assets/troy-bedingfield-resume.pdf');
   }
 
 }
