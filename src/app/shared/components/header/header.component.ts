@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  dropdownValue: string | undefined;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,7 +18,31 @@ export class HeaderComponent implements OnInit {
   }
 
   viewResume() {
-    window.open('./assets/troy-bedingfield-resume.pdf');
+
+
+    if (this.dropdownValue === 'PDF') {
+      window.open('./assets/troy-bedingfield-resume.pdf');
+    } else if (this.dropdownValue === 'DOC') {
+      window.open('./assets/troy-bedingfield-resume.doc');
+    }
+    else {
+      window.open('./assets/troy-bedingfield-resume.pdf');
+    }
+  }
+
+  handleValue(event: any) {
+    this.dropdownValue = event
+  }
+
+  handleButton(event: any) {
+    if (event.type == 'click' && this.dropdownValue === 'PDF') {
+      window.open('./assets/troy-bedingfield-resume.pdf');
+    } else if (event.type == 'click' && this.dropdownValue === 'DOC') {
+      window.open('./assets/troy-bedingfield-resume.doc');
+    }
+    else {
+      window.open('./assets/troy-bedingfield-resume.pdf');
+    }
   }
 
 }

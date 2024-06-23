@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../components/button/button.component';
+import { SplitButtonComponent } from '../components/split-button/split-button.component';
 
 
 
@@ -8,7 +9,8 @@ import { ButtonComponent } from '../components/button/button.component';
   declarations: [ButtonComponent],
   imports: [
     CommonModule,
+    SplitButtonComponent
   ],
-  exports: [ButtonComponent]
+  exports: [ButtonComponent, SplitButtonComponent]
 })
 export class SharedModule { }
