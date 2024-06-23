@@ -36,8 +36,6 @@ export class SplitButtonComponent {
   ngAfterViewInit(): void {
     //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
     //Add 'implements AfterViewInit' to the class.
-    console.log(this.dropdownButton?.nativeElement)
-    console.log(this.dropdownMenu?.nativeElement)
     this.renderer.listen('window', 'click', (e: Event) => {
       /**
        * Only run when toggleButton is not clicked
