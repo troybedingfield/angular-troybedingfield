@@ -5,13 +5,12 @@
         <ng-content></ng-content>
     </button>
     <div class="dropdown">
-        <button class="{{ color }} {{ fill }} {{ size }} {{uppercase === true ? 'text-uppercase' : ''}}"
+        <button #dropdownButton class="{{ color }} {{ fill }} {{ size }} {{uppercase === true ? 'text-uppercase' : ''}}"
             [disabled]="disabled" [style.maxWidth]="maxWidth + 'px'" [style.minWidth]="minWidth + 'px'"
-            [style.backgroundColor]="customBGColor" [ngClass]="isOpen" (mouseover)="changeStyle($event)">
+            [style.backgroundColor]="customBGColor" [ngClass]="isOpen" (click)="splitOpen($event)">
             <span class="down-arrow"></span>
         </button>
-        <div class="dropdown-content" [ngClass]="isOpen" (mouseover)="changeStyle($event)"
-            (mouseout)="changeStyle($event)">
+        <div class="dropdown-content" #dropdownMenu [ngClass]="isOpen">
             <ng-container *ngFor="let item of dropdownItems">
                 <a (click)="setValue(item)">
                     {{ item }}

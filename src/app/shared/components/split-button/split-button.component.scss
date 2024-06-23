@@ -18,6 +18,7 @@ button {
     // width: 100%;
     justify-content: center;
     cursor: pointer;
+    z-index: 2;
 
     &.secondary {
         background-color: var(--color-button-secondary);
@@ -203,6 +204,7 @@ button {
     display: inline-flex;
     border-radius: 0 8px 8px 0;
     border-left: 1px solid white;
+    z-index: 2;
 
     &:hover {
         opacity: 0.9;
@@ -247,6 +249,8 @@ button {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     top: -2px;
+    z-index: 1;
+    pointer-events: none;
 
 }
 
