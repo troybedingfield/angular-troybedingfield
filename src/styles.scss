@@ -82,6 +82,12 @@ app-design {
     display: flex;
 }
 
+app-pagenotfound {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
 a {
     color: var(--color-button-default);
     cursor: pointer;
