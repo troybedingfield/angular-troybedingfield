@@ -8,6 +8,7 @@ import { ContactService } from '../../services/contact.service';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  SITE_KEY: string = '6LcvSfApAAAAAKHZLwncTat926y89UVN3ySnK2aO'
 
   captcha: string | undefined;
 
@@ -48,7 +49,6 @@ export class ContactFormComponent {
     // console.warn(JSON.stringify(this.FormData.value));
     this.contact.PostMessage(this.FormData.value);
     this.FormData.reset();
-
     // reload on submission
     // window.location.reload();
   }

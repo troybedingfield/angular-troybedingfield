@@ -17,7 +17,7 @@
 </textarea>
         </div>
         <div [hidden]="captcha">
-            <re-captcha (resolved)="resolved($event)" siteKey="6LcvSfApAAAAAKHZLwncTat926y89UVN3ySnK2aO">
+            <re-captcha (resolved)="resolved($event)" siteKey="{{SITE_KEY}}">
             </re-captcha>
         </div>
         <tb-button [maxWidth]="88" [hidden]="!captcha" type="submit" [disabled]="!FormData.valid">Submit</tb-button>
