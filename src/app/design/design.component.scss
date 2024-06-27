@@ -23,3 +23,74 @@
     //     color: white;
     // }
 }
+
+
+
+.figma-work {
+    padding: 36px 0;
+    margin-top: -12px;
+    background-color: rgba($color: #001C29, $alpha: .6);
+
+    p {
+        color: white;
+    }
+
+    .inner-container {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+
+    }
+}
+
+
+#figma-desktop-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    // padding-top: 62.50%;
+    height: 800px;
+    // height: 800px;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#figma-mobile-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 425px;
+    // padding-top: 56.25%;
+    height: 900px;
+    // height: 800px;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 425px;
+        height: 100%;
+    }
+}

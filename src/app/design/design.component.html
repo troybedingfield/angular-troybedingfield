@@ -2,7 +2,36 @@
 
     <div class="design-top-section">
 
-        <p class="text-center">design</p>
+        <!-- <p class="text-center">Prototypes</p>
 
+
+        <div>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJhyHuflMdoV9qNb7tXCyeU%2FUser-Flow%3Fnode-id%3D15-25105%26t%3DMMN3ouwtJn7PuhZv-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A12504"
+                allowfullscreen></iframe>
+        </div> -->
     </div>
+
+    <div class="figma-work">
+        <div class="inner-container">
+            <div class="text-center">
+                <p>Click to see Figma Prototypes</p>
+                <div class="button-container">
+                    <tb-button [minWidth]="75" [customBGColor]="'#1abcfe'" (click)="showDesktop()">Desktop</tb-button>
+                    <tb-button [minWidth]="75" [customBGColor]="'#1abcfe'" (click)="showMobile()">Mobile</tb-button>
+                </div>
+            </div>
+            <div id="figma-desktop-container" *ngIf="showDesktopProto">
+                <iframe class=" responsive-iframe"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJhyHuflMdoV9qNb7tXCyeU%2FUser-Flow%3Fnode-id%3D15-25105%26t%3DMMN3ouwtJn7PuhZv-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A12504%26hide-ui%3D1"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="figma-mobile-container" *ngIf="showMobileProto">
+                <iframe class=" responsive-iframe"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJhyHuflMdoV9qNb7tXCyeU%2FUser-Flow%3Fnode-id%3D47-60563%26t%3DVwa3RZsSxcq3pG5x-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D47%253A69285%26starting-point-node-id%3D47%253A57686%26hide-ui%3D1"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 </div>
