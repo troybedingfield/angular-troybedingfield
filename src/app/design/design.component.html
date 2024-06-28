@@ -1,8 +1,31 @@
 <div class="design-container">
 
-    <div class="design-top-section">
-        <p class="text-center">Figma design screens of a user workflow</p>
+    <div class="design-system-container">
+        <h3 class="text-center">Design system I created and managed in Figma</h3>
         <div class="inner-carousel-container">
+            <app-carousel [selHeight]="500" [images]="[
+                '../../../../assets/images/carousel-home/2.png', 
+                '../../../../assets/images/carousel-home/4.png',
+                '../../../../assets/images/design-section-2/3.png'
+                ]"></app-carousel>
+        </div>
+    </div>
+
+
+
+    <div class="figma-work">
+        <div class="inner-container">
+            <p class="text-center">Built out all our assets and components in Figma to match what we defined in our
+                styleguide and built them to match how they are built in code and setup the same properties and added
+                code
+                snippets so the design and development can match and be consistent</p>
+            <tb-button (click)="designSystemLink()">Figma Link</tb-button>
+        </div>
+    </div>
+
+    <div class="design-top-section">
+        <h3 class="text-center">Figma design screens of a user workflow</h3>
+        <div class="inner-carousel-container top-section">
             <app-carousel [selHeight]="500" [images]="[
                 '../../../../assets/images/design-section-1/1.png', 
                 '../../../../assets/images/design-section-1/2.png',
@@ -26,6 +49,7 @@
         <!-- <app-carousel
             [images]="['../../../../assets/images/troy-homepage-montage-01.png', '../../../../assets/images/troy-homepage-montage-01.png']"></app-carousel> -->
     </div>
+
 
     <div class="figma-work">
         <div class="inner-container">
@@ -56,14 +80,13 @@
     </div>
 
 
-    <div class="design-system-container">
-        <p class="text-center">Design system I created and managed in Figma</p>
-        <div class="inner-carousel-container">
-            <app-carousel [selHeight]="500" [images]="[
-                '../../../../assets/images/carousel-home/2.png', 
-                '../../../../assets/images/carousel-home/4.png',
-                
-                ]"></app-carousel>
+    <div class="user-flow-container">
+        <div class="inner-container">
+            <p class="text-center">Created responsive designs and setup prototypes for a user flow with another designer
+                for a new product we were working on while building out the design system so we could refine and add
+                components and prototyping sections to make it easier for the UX team to create in Figma </p>
+            <tb-button (click)="userFlowLink()">Figma Link</tb-button>
         </div>
     </div>
+
 </div>

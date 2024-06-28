@@ -39,4 +39,10 @@ export class DesignComponent {
     this.showMobileProto = false
     this.showTabletProto = !this.showTabletProto
   }
+  designSystemLink() {
+    window.open('https://www.figma.com/design/rOj7ptt7KWZOZdNt2cen4n/Design-System?node-id=1-26&t=GDn677E0etS2kMeb-1')
+  }
+  userFlowLink() {
+    window.open('https://www.figma.com/design/JhyHuflMdoV9qNb7tXCyeU/User-Flow?node-id=193-27021&t=FHbdYcUXeDaHUdGM-1')
+  }
 }
