@@ -1,0 +1,24 @@
+<!-- Slideshow container -->
+<div class="carousel-container" [style.height]="selHeight + 'px'">
+    <div (mouseenter)="automatic === true ? pauseCarousel() : ''" (mouseout)="automatic === true ? restartTimer(): ''"
+        class="carousel">
+
+        <ng-container *ngFor="let image of images; let i = index">
+
+            <img *ngIf="i === currentSlide" src="{{image}}" class="slide fade">
+
+        </ng-container>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" (click)="onPreviousClick()">&#10094;</a>
+        <a class="next" (click)="onNextClick()">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <ng-container *ngFor="let image of images; let  i = index">
+            <span [ngClass]="i===currentSlide ? 'active' : ''" class="dot" (click)="dotSelect(i)"></span>
+        </ng-container>
+    </div>
+</div>

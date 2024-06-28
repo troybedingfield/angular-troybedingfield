@@ -1,11 +1,12 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { SharedModule } from '../shared/modules/shared.module';
+import { CarouselComponent } from '../shared/components/carousel/carousel.component';
 
 @Component({
   selector: 'app-design',
   standalone: true,
-  imports: [NgIf, SharedModule],
+  imports: [NgIf, SharedModule, CarouselComponent],
   templateUrl: './design.component.html',
   styleUrl: './design.component.scss'
 })

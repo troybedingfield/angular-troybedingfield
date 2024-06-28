@@ -38,7 +38,8 @@
 
     <div class="figma-work">
         <div class="inner-container">
-            <div class="text-center">
+            <p class="text-center">Workflow Designs and Design System Components from Figma</p>
+            <!-- <div class="text-center">
                 <p>Click to see Figma work</p>
                 <div class="button-container">
                     <tb-button [customBGColor]="'#1abcfe'" (click)="showFigma=!showFigma"><ng-container>{{showFigma ===
@@ -51,6 +52,16 @@
                 <iframe class=" responsive-iframe"
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FrOj7ptt7KWZOZdNt2cen4n%2FDesign-System%3Ft%3DkPEUfPGxHZjAR30J-1"
                     allowfullscreen></iframe>
+            </div> -->
+            <app-carousel [selHeight]="600" [automatic]="true" [interval]="5000"
+                [images]="['../../../../assets/images/carousel-home/4.png', '../../../../assets/images/carousel-home/1.png', '../../../../assets/images/carousel-home/2.png', '../../../../assets/images/carousel-home/3.png']"></app-carousel>
+
+            <br />
+            <br />
+            <p class="text-center">Click to see more designs and prototypes of a user workflow</p>
+            <div class="button-container">
+                <tb-button (click)="goToDesign()">Design</tb-button>
+
             </div>
         </div>
     </div>
