@@ -25,4 +25,8 @@ export class HomeComponent {
     this.router.navigateByUrl('/design');
   }
 
+  goToReact() {
+    window.open('https://troybedingfield.github.io/react-troybedingfield/')
+  }
+
 }
