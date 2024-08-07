@@ -23,6 +23,8 @@
         </div>
     </div>
 
+
+
     <div class="design-top-section">
         <h3 class="text-center">Figma design screens of a user workflow</h3>
         <div class="inner-carousel-container top-section">
@@ -36,6 +38,15 @@
                 '../../../../assets/images/design-section-1/7.png',
                 '../../../../assets/images/design-section-1/8.png',
                 ]"></app-carousel>
+        </div>
+        <div class="user-flow-container">
+            <div class="inner-container">
+                <p class="text-center">Created responsive designs and setup prototypes for a user flow with another
+                    designer
+                    for a new product we were working on while building out the design system so we could refine and add
+                    components and prototyping sections to make it easier for the UX team to create in Figma </p>
+                <tb-button (click)="userFlowLink()">Figma Link</tb-button>
+            </div>
         </div>
         <!-- <p class="text-center">Prototypes</p>
 
@@ -80,12 +91,25 @@
     </div>
 
 
-    <div class="user-flow-container">
+
+
+    <div class="journeyAndFlows top-section">
+        <h3 class="text-center">Figma user journey and user flows</h3>
+        <div class="inner-carousel-container top-section">
+            <app-carousel [selHeight]="500" [images]="[
+                '../../../../assets/images/design-section-3/journey.png', 
+                '../../../../assets/images/design-section-3/group1.png',
+                '../../../../assets/images/design-section-3/group2.png',
+                '../../../../assets/images/design-section-3/group3.png'
+                ]"></app-carousel>
+        </div>
+
+    </div>
+
+    <div class="figma-work bottom-container">
         <div class="inner-container">
-            <p class="text-center">Created responsive designs and setup prototypes for a user flow with another designer
-                for a new product we were working on while building out the design system so we could refine and add
-                components and prototyping sections to make it easier for the UX team to create in Figma </p>
-            <tb-button (click)="userFlowLink()">Figma Link</tb-button>
+            <p class="text-center">Click to see user journey with user flows</p>
+            <tb-button (click)="userJourneyLink()">Figma Link</tb-button>
         </div>
     </div>
 

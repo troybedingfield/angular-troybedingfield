@@ -45,4 +45,7 @@ export class DesignComponent {
   userFlowLink() {
     window.open('https://www.figma.com/design/JhyHuflMdoV9qNb7tXCyeU/User-Flow?node-id=193-27021&t=FHbdYcUXeDaHUdGM-1')
   }
+  userJourneyLink() {
+    window.open('https://www.figma.com/design/CmmNz4sHeCNusCYu9HByHo/User-Journey-and-Flow?node-id=0-1&t=e3uLcWoGPcL0L5sn-1')
+  }
 }
