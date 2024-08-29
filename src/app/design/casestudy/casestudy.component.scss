@@ -252,6 +252,11 @@
         align-items: center;
         justify-content: center;
         margin: 24px 0;
+
+        img {
+            display: flex;
+            width: 100%;
+        }
     }
 
     .button-container {
@@ -475,5 +480,24 @@
                 width: 100%;
             }
         }
+    }
+}
+
+
+.desktop-image {
+    display: flex !important;
+}
+
+.mobile-image {
+    display: none !important;
+}
+
+@media only screen and (max-width: 549px) {
+    .desktop-image {
+        display: none !important;
+    }
+
+    .mobile-image {
+        display: flex !important;
     }
 }
