@@ -2,6 +2,7 @@ import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { SharedModule } from '../shared/modules/shared.module';
 import { CarouselComponent } from '../shared/components/carousel/carousel.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-design',
@@ -20,7 +21,7 @@ export class DesignComponent {
   showMobileText: string = 'Show'
   hideMobileText: string = 'Hide'
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -47,5 +48,8 @@ export class DesignComponent {
   }
   userJourneyLink() {
     window.open('https://www.figma.com/design/CmmNz4sHeCNusCYu9HByHo/User-Journey-and-Flow?node-id=0-1&t=e3uLcWoGPcL0L5sn-1')
+  }
+  caseStudyLink() {
+    this.router.navigate(['design/casestudy']);
   }
 }

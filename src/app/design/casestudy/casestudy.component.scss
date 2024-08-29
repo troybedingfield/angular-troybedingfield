@@ -3,11 +3,117 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
-    padding: 24px 0;
+    padding: 0px 0 48px 0;
     gap: 12px;
     justify-content: center;
     background: rgba($color: #007cba, $alpha: 1);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 124, 186, 1) 55%);
+}
+
+
+.cscopy-section {
+    background-color: rgba($color: white, $alpha: 0.98);
+    padding: 12px 0;
+
+
+    .inner-container {
+        max-width: 1248px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+
+        .button-container {
+            margin-top: 24px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .col-container {
+        display: flex;
+        flex-direction: row;
+
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 16px;
+
+            &.center {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    #figma-mobile-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 425px;
+        // padding-top: 56.25%;
+        height: 900px;
+        // height: 800px;
+        /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            max-width: 425px;
+            height: 100%;
+        }
+    }
+}
+
+
+.cscopy-section-alt {
+
+    padding: 12px 0;
+    color: #fff;
+
+    .white {
+        color: #fff;
+    }
+
+    .inner-container {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        color: #fff;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .col-container {
+        display: flex;
+        flex-direction: row;
+
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 16px;
+
+            &.center {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
 
 .inner-carousel-container {
@@ -113,9 +219,18 @@
     margin: 0 auto;
     width: 100%;
     margin: 24px 0;
+    align-items: center;
 
     & * {
         color: white;
+    }
+
+    p {
+        max-width: 1248px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12px;
     }
 
     .inner-carousel-container {
@@ -191,7 +306,7 @@
 
 
 
-.figma-work {
+.case-study {
     padding: 36px 0;
     // margin-top: -12px;
     background-color: rgba($color: #001C29, $alpha: .6);
@@ -199,6 +314,10 @@
     p {
         color: white;
         max-width: 800px;
+    }
+
+    .white {
+        color: #ffffff;
     }
 
     .inner-container {
@@ -288,8 +407,73 @@
 }
 
 
+
+
+
 @media screen and (max-width:559px) and (min-width: 320px) {
     ::ng-deep .carousel-container {
         height: 300px !important;
+    }
+}
+
+
+@media only screen and (max-width: 475px) {
+    .cscopy-section {
+        background-color: rgba($color: white, $alpha: 0.98);
+        padding: 12px 0;
+
+
+        .inner-container {
+            max-width: 1280px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .col-container {
+            display: flex;
+            flex-direction: column;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+
+
+    .cscopy-section-alt {
+
+        padding: 12px 0;
+
+
+        .inner-container {
+            max-width: 1280px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .col-container {
+            display: flex;
+            flex-direction: column;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
     }
 }
